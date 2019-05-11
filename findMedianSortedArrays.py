@@ -26,5 +26,5 @@ class Solution:
         if ListLen%2 == 0:
             median = (nums3[int(ListLen/2)]+nums3[int(ListLen/2-1)])/2
         else:
-            median = nums3[int((ListLen+1)/2)-1]
+            median = nums3[int((ListLen+1)/2-1)]
         return median
