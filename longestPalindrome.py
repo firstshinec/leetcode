@@ -1,3 +1,4 @@
+# Move the middle points for the largest loopback sequence, disgarding the possible sequence with less length
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         MedIcr = 0
