@@ -23,7 +23,7 @@ class Solution:
                         continue
                     else:
                         if s[Med-(MaxLen-1)//2:Med+1] == s[Med+(MaxLen-1)//2+1:Med:-1]: # check if the internal seq meets the previous MaxLen
-                            for n in range(MaxLen//2, MaxHalfPossLen):
+                            for n in range(MaxLen//2-1, MaxHalfPossLen):
                                 if s[Med-n] == s[Med+n+1]:
                                     MaxLen = 2*(n+1)
                                     MaxIdx = [Med-n, Med+n+2]
@@ -38,7 +38,7 @@ class Solution:
                         continue
                     else:
                         if s[Med-(MaxLen-1)//2:Med] == s[Med+(MaxLen-1)//2:Med:-1]:
-                            for n in range(MaxLen//2+1, MaxHalfPossLen+1):
+                            for n in range(MaxLen//2, MaxHalfPossLen+1):
                                 if s[Med-n] == s[Med+n]:
                                     MaxLen = 2*n + 1
                                     MaxIdx = [Med-n, Med+n+1]
