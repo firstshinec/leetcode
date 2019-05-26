@@ -3,7 +3,7 @@
 # Hard to understand.
 
 class Solution:
-    def permute(self, nums: List[int]) -> List[List[int]]:
+    def permute(self, nums):
         def backtrack(first = 0):
             # if all integers are used up
             if first == n:  
@@ -21,3 +21,6 @@ class Solution:
         output = []
         backtrack()
         return output
+
+a = Solution
+a.permute(a, nums=[1, 2, 3])
